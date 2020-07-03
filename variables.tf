@@ -7,6 +7,10 @@
 #Example: ~/.ssh/terraform.pub
 #DESCRIPTION
 #}
+variable "private_key" {
+	description = "enter your private key"
+}
+
 
 variable "public_key" {
 	description = "enter your public key"
