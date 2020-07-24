@@ -1,7 +1,7 @@
 # Specify the provider and access details
 
 provider "aws" {
-  region = "${var.aws_region}"
+  region = "eu-west-1"
 }
 
 # Create a VPC to launch our instances into
