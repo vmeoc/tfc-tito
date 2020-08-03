@@ -7,7 +7,7 @@
 #Example: ~/.ssh/terraform.pub
 #DESCRIPTION
 #}
-variable "instance_number {
+variable "instance_number" {
 	description = "enter the number of instances needed"
 }
 
