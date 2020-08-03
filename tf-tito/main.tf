@@ -54,9 +54,17 @@ resource "aws_subnet" "default" {
 # Our default security group to access
 # the instances over SSH and HTTP
 resource "aws_security_group" "default" {
-  name        = "terraform_example2"
+  name        = "terraform_example"
   description = "Used in the terraform"
   vpc_id      = aws_vpc.default.id
+
+  # dummy port from anywhere
+  ingress {
+    from_port   = 222
+    to_port     = 222
+    protocol    = "tcp"
+    cidr_blocks = ["0.0.0.0/0"]
+  }
 
   # SSH access from anywhere
   ingress {
