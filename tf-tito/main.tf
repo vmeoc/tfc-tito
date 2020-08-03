@@ -54,7 +54,7 @@ resource "aws_subnet" "default" {
 # Our default security group to access
 # the instances over SSH and HTTP
 resource "aws_security_group" "default" {
-  name        = "terraform_example"
+  name        = "terraform_example2"
   description = "Used in the terraform"
   vpc_id      = aws_vpc.default.id
 
