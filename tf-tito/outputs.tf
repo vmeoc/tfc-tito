@@ -1,3 +1,3 @@
 output "address" {
-  value = "http://${aws_instance.web[1].public_ip}/index.php"
+  value = "http://${aws_instance.web.public_ip}/index.php"
 }
