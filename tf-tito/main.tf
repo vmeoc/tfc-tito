@@ -60,8 +60,8 @@ resource "aws_security_group" "default" {
 
   # dummy port from anywhere
   ingress {
-    from_port   = 222
-    to_port     = 222
+    from_port   = 225
+    to_port     = 225
     protocol    = "tcp"
     cidr_blocks = ["0.0.0.0/0"]
   }
