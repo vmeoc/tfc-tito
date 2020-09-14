@@ -114,9 +114,9 @@ resource "aws_security_group" "default" {
 #  }
 #}
 
-resource "aws_key_pair" "auth" {
-   key_name   = var.key_name
-  public_key = var.public_key
+#resource "aws_key_pair" "auth" {
+#   key_name   = var.key_name
+#  public_key = var.public_key
 }
 
 resource "aws_instance" "web" {
