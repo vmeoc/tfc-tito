@@ -125,7 +125,7 @@ resource "aws_instance" "web" {
   connection {
     # The default username for our AMI
     user = "centos"
-    private_key = var.private_key
+    private_key = "vince"
     host = self.public_ip
 
     # The connection will use the local SSH agent for authentication.
