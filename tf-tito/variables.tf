@@ -11,18 +11,18 @@ variable "instance_number" {
 	description = "enter the number of instances needed"
 }
 
-variable "private_key" {
-	description = "enter your private key"
-}
+#variable "private_key" {
+#	description = "enter your private key"
+#}
 
 
 variable "public_key" {
 	description = "enter your public key"
 }
 
-variable "key_name" {
-  description = "enter the key pair name"
-}
+#variable "key_name" {
+#  description = "enter the key pair name"
+#}
 
 variable "aws_region" {
   description = "AWS region to launch servers."
