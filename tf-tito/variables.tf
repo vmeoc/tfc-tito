@@ -16,9 +16,9 @@ variable "instance_number" {
 #}
 
 
-variable "public_key" {
-	description = "enter your public key"
-}
+#variable "public_key" {
+#	description = "enter your public key"
+#}
 
 #variable "key_name" {
 #  description = "enter the key pair name"
