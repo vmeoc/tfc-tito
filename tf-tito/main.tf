@@ -136,10 +136,10 @@ resource "aws_instance" "web" {
 
   # Lookup the correct AMI based on the region
   # we specified
-  ami = lookup(var.aws_amis, var.aws_region)
+  ami = lookup("ami-693d3483", "eu-west-1")
 
   # The name of our SSH keypair we created above.
-  key_name = aws_key_pair.auth.id
+  key_name = vince
 
   # Our Security group to allow HTTP and SSH access
   vpc_security_group_ids = [aws_security_group.default.id]
