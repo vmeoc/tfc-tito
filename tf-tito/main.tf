@@ -136,7 +136,7 @@ resource "aws_instance" "web" {
 
   # Lookup the correct AMI based on the region
   # we specified
-  ami = lookup("ami-693d3483", "eu-west-1")
+  ami = "ami-693d3483"
 
   # The name of our SSH keypair we created above.
   key_name = "vince"
