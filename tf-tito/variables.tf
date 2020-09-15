@@ -11,9 +11,9 @@ variable "instance_number" {
 	description = "enter the number of instances needed"
 }
 
-#variable "private_key" {
-#	description = "enter your private key"
-#}
+variable "private_key" {
+	description = "enter your private key"
+}
 
 
 #variable "public_key" {
