@@ -139,7 +139,7 @@ resource "aws_instance" "web" {
   ami = lookup("ami-693d3483", "eu-west-1")
 
   # The name of our SSH keypair we created above.
-  key_name = vince
+  key_name = "vince"
 
   # Our Security group to allow HTTP and SSH access
   vpc_security_group_ids = [aws_security_group.default.id]
