@@ -16,9 +16,9 @@ variable "private_key" {
 }
 
 resource "aws_instance" "machine1" {
-    ami           = "ami-04b9e92b5572fa0d1"
+    ami           = "ami-693d3483"
     instance_type = "t2.micro"
-    availability_zone = "us-east-1a"
+    availability_zone = "eu-west-1"
 
     tags = {
         department = var.department
@@ -52,9 +52,9 @@ resource "aws_instance" "machine1" {
 }
 
 resource "aws_instance" "machine2" {
-    ami           = "ami-04b9e92b5572fa0d1"
+    ami           = "ami-693d3483"
     instance_type = "t2.micro"
-    availability_zone = "us-east-1a"
+    availability_zone = "eu-west-1"
 
     tags = {
         department = var.department
